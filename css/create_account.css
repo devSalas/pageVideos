@@ -13,10 +13,34 @@
     --colorBack3: #35383F;
     --colorFont1: #FFF;
     --colorFont2: #9E9E9E;
-}
 
+    /* estilos de Esteban  para page videos*/
+    --background-primary:#16181E;
+    --background-secondary:#21242D;
+  
+    --color-primary:#F9F9F9;
+    --color-secondary:#4EBAAE;
+    --color-therd:#16181E;
+  
+    --color-btn-primary:#F9F9F9;
+    --color-btn-secondary:#4C4F56;
+  
+    --background-btn-primary:#4EBAAE;
+    --background-btn-secondary:#40534de1;
+}
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  *::before,*::after,html{
+    box-sizing: inherit;
+  }
+  
+  
 /*principal*/
-.main{
+.login{
     background-color: var(--colorBack1);
 
     color: var(--colorFont1);
@@ -28,7 +52,7 @@
     min-height: 100vh;
 }
 /*cabecera*/
-.header{
+.login-header{
     
     display: flex;
     flex-direction: column;
@@ -36,14 +60,14 @@
 
     padding: 20px;
 }
-.logo{
+.login-logo{
     width: 100px;
     padding: 20px;
 }
 
 /*contenido*/
 
-.form{
+.content-form{
     
     /*flexbox*/
     display: flex;
@@ -51,14 +75,14 @@
     align-items: center;
 }
 
-.form__inputs{
+.content-form__inputs{
     padding: 10px;
     width: 300px;
     display: flex;
     flex-direction: column;
 }
 
-.input{
+.content-form__inputs .input{
     background-color: var(--colorBack2);
 
     color: var(--colorFont1);
@@ -69,7 +93,7 @@
     transition: all 0.1s;
 }
 
-.label{
+.content-form__inputs .label{
 
     pointer-events: none;
     color: var(--colorFont2);
@@ -81,29 +105,29 @@
 
     transition: all 0.1s;
 }
-
-.input:focus{
+ 
+.content-form__inputs .input:focus{
     outline: 2px solid var(--colorPrim1);
     background-color: var(--colorPrim3);
     color: var(--colorFont1);
 }
 
-.input:focus ~ .label,
-.input:valid ~ .label{
+.content-form__inputs .input:focus ~ .label,
+.content-form__inputs .input:valid ~ .label{
     color: rgba(0, 0, 0, 0);
 }
 
-.form__checkbox{
+.content-form__inputs .form__checkbox{
     padding: 10px;
 }
 
-.form__btn{
+.content-form .form__btn{
     padding: 10px;
     width: 300px;
     display: flex;
     flex-direction: column;
 }
-.button{
+.content-form .form__btn .button{
 
     border: none;
     border-radius: 30px;
@@ -112,7 +136,7 @@
     color: #fff;
     transition: all 0.2s;
 }
-.button:hover{
+.content-form .form__btn .button:hover{
     background-color: var(--colorPrim1);
 }
 
@@ -127,13 +151,13 @@
     padding: 20px 0px;
 }
 
-.cuentas{
+.footer .cuentas{
     display: flex;
     gap: 10px;
     padding: 20px 0px;
 }
 
-.cuentas__btn{
+.footer .cuentas__btn{
     width: 80px;
     height: 50px;
     border-radius: 10px;
@@ -143,7 +167,7 @@
     
 }
 
-.iniciarSeccion{
+.footer .iniciarSeccion{
     color: var(--colorPrim1);
     text-decoration: none;
 }
