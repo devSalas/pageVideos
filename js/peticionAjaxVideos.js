@@ -5,7 +5,7 @@ const getData= async()=>{
     const res = await fetch("https://api.themoviedb.org/3/movie/popular?api_key=a1f559e723e5f97fd1014af75fb51fac&language=es-MX");
     //console.log(res)
     const data = await res.json();
-   // console.log(data)
+   console.log(data)
     const $template=document.querySelector('template').content
     const $fragment=document.createDocumentFragment()
     const $popular = document.querySelector('.popular')

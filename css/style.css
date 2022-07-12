@@ -18,7 +18,7 @@
 .container{
   /* background:var(--background-secondary); */
   display: grid;
-  grid-template-columns:20% 55% 25%;
+  grid-template-columns:20% 50% 30%;
   /* grid-template-rows:100vh auto 100vh; */
   grid-template-areas: 
   "guide-content main more-content";
@@ -295,7 +295,7 @@ main .content-videos .popular .video .details .btns .button.watch{
   height: 100vh;
   width: 100%;
   overflow-x:hidden ;
-  padding: 0px 0px 0px 8%;
+  padding: 0px 0px 0px 5%;
   position: sticky;
   top : 0;
   color: var(--color-primary);
@@ -310,6 +310,7 @@ main .content-videos .popular .video .details .btns .button.watch{
   justify-content: space-between;
   
 }
+
 .more-content .profile .info{
   display: flex;
   align-items: center;
@@ -329,18 +330,47 @@ main .content-videos .popular .video .details .btns .button.watch{
 .more-content .profile .info .more{
   margin:0 0 0 10px ;
   background-color: var(--background-btn-secondary);
+  overflow:Hidden;
+  border-radius: 50%;
 }
 
+.more-content .profile .info .more img{
+  width:100%;
+}
 .more-content .continue{
   grid-row: 2/3;
 
 
 
 }
+.more-content .continue .videos-watched .video-uno{
+  background-image: url(../img/avenger.jpg);
+  background-size: 100%;
+}
+.more-content .continue .videos-watched .video-dos{
+  background-image: url(../img/pelicalamar.jpg);
+  background-size: 100%;
+}
+
+
+
 .more-content .top-rated{
   grid-row: 3/4;
   position: relative;
 }
+.more-content .top-rated .videos-watched .video-uno{
+  background-image: url(../img/doctorStrange.webp);
+  background-size: 100%;
+}
+.more-content .top-rated .videos-watched .video-dos{
+  background-image: url(../img/blackphone.jpg);
+  background-size: 100%;
+}
+
+
+
+
+
 .more-content .genres{
   grid-row: 4/5;
   display: grid;
@@ -352,6 +382,7 @@ main .content-videos .popular .video .details .btns .button.watch{
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
+  padding-right:7%
 }
 
 /* voy a crear la estructura de los videos
@@ -401,13 +432,37 @@ de el contenido continue */
 }
 .more-content .genres .videos-watched .video{
     display: grid;
-    grid-template-columns:1fr;    grid-template-rows:1fr;
+    grid-template-columns:1fr;  
+    grid-template-rows:1fr;
     justify-content: center;
+    
+}
+.more-content .genres .videos-watched .video-uno{
+  
+  background-image: url(../img/tragedia.webp);
+  background-size: 100%;
+  backdrop-filter: blur(12px);
+}
+.more-content .genres .videos-watched .video-dos{
+  
+  background-image: url(../img/comedia.jpg);
+  background-size: 100%;
+}
+.more-content .genres .videos-watched .video-tres{
+  
+  background-image: url(../img/drama.webp);
+  background-size: 100%;
+}
+.more-content .genres .videos-watched .video-cuatro{
+  
+  background-image: url(../img/accion.jpeg);
+  background-size: 100%;
 }
 .more-content .genres .videos-watched:nth-child(1){
   /* top: 20px; */
   grid-row: 1/2;
   left: 0;
+ 
 }
 
 .more-content .genres .videos-watched:nth-child(2){

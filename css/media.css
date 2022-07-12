@@ -1,6 +1,20 @@
-@media screen and (max-width: 1024px) {
-  
+@media screen and (max-width: 1200px) {
+  main .submain .navbar h3{
+    font-size:16px;
+  }
+ .navbar .search input{
+    width:180px;
+  }
 }
+@media screen and (max-width: 1000px) {
+  main .submain .navbar h3{
+    font-size:16px;
+  }
+ .navbar .search input{
+    width:120px;
+  }
+}
+
 
 @media screen and (max-width: 800px) {
   .container{
