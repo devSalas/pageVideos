@@ -40,7 +40,7 @@
   
   
 /*principal*/
-.login{
+.logIn,.signIn{
     background-color: var(--colorBack1);
 
     color: var(--colorFont1);
@@ -51,8 +51,29 @@
     align-items: center;
     min-height: 100vh;
 }
+
+.logIn-form .form__btn{
+    padding: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.logIn-form .form__btn .button{
+
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    background-color: var(--colorPrim2);
+    color: #fff;
+    transition: all 0.2s;
+}
+.logIn-form .form__btn .button:hover{
+    background-color: var(--colorPrim1);
+}
+
+
 /*cabecera*/
-.login-header{
+.signIn-header{
     
     display: flex;
     flex-direction: column;
@@ -60,10 +81,20 @@
 
     padding: 20px;
 }
-.login-logo{
+.signIn-logo{
     width: 100px;
     padding: 20px;
 }
+
+/* iniciar sesion */
+
+.logIn h2{
+    margin-bottom:20px ;
+}
+
+
+
+
 
 /*contenido*/
 
@@ -140,34 +171,3 @@
     background-color: var(--colorPrim1);
 }
 
-/*pie*/
-.footer{
-
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    padding: 20px 0px;
-}
-
-.footer .cuentas{
-    display: flex;
-    gap: 10px;
-    padding: 20px 0px;
-}
-
-.footer .cuentas__btn{
-    width: 80px;
-    height: 50px;
-    border-radius: 10px;
-    border: 1px solid var(--colorBack3);
-    background-color: var(--colorBack2);
-    color: var(--colorFont1);
-    
-}
-
-.footer .iniciarSeccion{
-    color: var(--colorPrim1);
-    text-decoration: none;
-}

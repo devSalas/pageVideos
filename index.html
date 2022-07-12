@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/create_account.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/media.css">
+  <link rel="stylesheet" href="./css/create_account.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
   <title>Document</title>
 </head>
 <body> 
-  <div class="login">
+  <div class="signIn">
 
-    <div class="login-header">
-        <img class="login-logo" src="../img/logo.jpg" alt="">
-        <h2>Create Your Account</h2>
+    <div class="signIn-header">
+        <img class="signIn-logo" src="../img/logo.jpg" alt="">
+        <h2>TIMY MOVIEZ</h2>
     </div>
 
     <div class="content">
@@ -23,7 +23,7 @@
                 <input class="input" name="nombre" id="name" type="text" required>
                 <label class="label" for="email">Nombre</label>
             </div>
-           <!-- <div class="content-form__inputs">
+           <div class="content-form__inputs">
                 <input class="input" id="email" type="text" required>
                 <label class="label" for="email">Email</label>
             </div>
@@ -31,30 +31,32 @@
                 <input class="input" id="password" type="text" required>
                 <label class="label" for="password">Password</label>
             </div>
-            <div class="form__checkbox">
-                <input type="checkbox" name="remember" id="remember">
-                <label for="remember">Remember me</label>
-            </div> -->
             <div class="form__btn">
-                <button type="submit" class="button SignUp">Sign up</button>
+                <button type="submit" class="button SignUp">Crear Cuenta</button>
             </div>
         </form>
     </div>
 
-    <div class="footer">
-        <div>
-            <p>or continue with</p>
-        </div>
-        <div class="cuentas">
-            <button class="cuentas__btn"><i class="fa-brands fa-facebook"></i></button>
-            <button class="cuentas__btn"><i class="fa-brands fa-google"></i></button>
-            <button class="cuentas__btn"><i class="fa-brands fa-apple"></i></button>
-        </div>
-        <div>
-            <p>Already have an account? <a class="iniciarSeccion" href="">Sign in</a></p>
-        </div>
-    </div>
-</div>
+   
+  </div>
+  <div class="logIn none">
+    <img class="signIn-logo" src="../img/logo.jpg" alt="">
+    <h2>TIMY MOVIEZ</h2>
+    <form class="logIn-form" action="">
+     <div class="content-form__inputs">
+          <input class="input" id="email" type="text" required>
+          <label class="label" for="email">Email</label>
+      </div>
+       <div class="content-form__inputs">
+          <input class="input" id="password" type="text" required>
+          <label class="label" for="password">Password</label>
+      </div>
+      <div class="form__btn">
+            <button type="submit" class="button btnLogIn">Iniciar Sesion </button>
+      </div>
+  </form>
+  </div>
+
 <div class="pageVideos none">
   <div class="container">
       <div class="guide-content">
@@ -289,6 +291,6 @@
     </div>
   </template>
 </div>
- <script src="../js/app.js" type="module"></script>
+ <script src="./js/app.js" type="module"></script>
 </body>
 </html>
