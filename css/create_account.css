@@ -177,4 +177,15 @@
     right:30px;
     padding: 15px 30px;
     background: #1c7e40;
+    border-radius:15px;
+    color:white;
+}
+#jumpAll{
+    position: absolute;
+    top:80px;
+    right:30px;
+    padding: 5px 30px;
+    background: #1c7e40;
+    border-radius:15px;
+    color:white;
 }
